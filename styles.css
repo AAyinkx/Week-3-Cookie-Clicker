@@ -1,3 +1,57 @@
+h1 {
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-align: center;
+}
 body {
-  background-color: #ff79b0;
+  background-color: #55ccc9;
+  font-family: "Montserrat";
+}
+#cookie {
+  width: 200px;
+  height: 200px;
+}
+#error-message {
+  display: none;
+}
+#number-of-cookies {
+  font-size: 4em;
+  text-align: center;
+}
+
+#cookies-per-second {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#cookie-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+#upgrades-container {
+  max-width: 600px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.upgrade-item {
+  display: flex;
+  /* column-gap: 20px; */
+  justify-content: space-between;
+
+  align-items: center;
+  padding: 10px;
+  font-size: 1.4em;
+  border-bottom: 2px dotted #8c1c1c;
+}
+#main-container {
+  border: 5px solid #8c1c1c;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+.buy-button {
+  border-radius: 15px;
 }
