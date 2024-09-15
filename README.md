@@ -43,4 +43,4 @@ I have left debugging reflections in my javascript too which are in **red**. I w
 
 - I did have a deployment issue right at the end because it was waiting to get data from local storage when there was no data there yet. I fixed this by adding or statements as an alternative
 
--I absolutely loved 💖 working on this assignmennt. I was heavy on the javascript which is my favoutite part and i loved that i could include my family in the interactivity sections
+-I absolutely loved 💖 working on this assignmennt. I was heavy on the javascript which is my favoutite part and i loved that i could include my family in the interactivity sections.
