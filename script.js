@@ -26,6 +26,7 @@ let cookieImageArray = [
   "./Media/Cookie.png",
   "./Media/doubleChocolate.png",
   "./Media/heartCookie.png",
+  "./Media/partyRing.png",
   "./Media/Oreo.png",
   "./Media/cracker.png",
   "./Media/Smore.png",
