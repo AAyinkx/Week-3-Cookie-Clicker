@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 h1 {
   font-family: "Bungee Tint", sans-serif;
   font-weight: 400;
@@ -5,16 +6,73 @@ h1 {
   font-size: 50px;
   text-align: center;
 }
+
 body {
-  background-color: #55ccc9;
+  background-color: #80cbc4;
   font-family: "Montserrat";
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  top: 50vh;
+  transform: translateY(-50%);
+  /* overflow: scroll; */
 }
-#cookie {
-  width: 200px;
-  height: 200px;
+#main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-items: center; */
+  margin: 10px;
+  /* top: 50vh;
+  transform: translateY(-50%); */
 }
-#error-message {
-  display: none;
+
+#secondary-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #8c1c1c;
+  padding: 40px 40px 10px 40px;
+  border-radius: 15px;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 10px;
+}
+#menu {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  top: 2px;
+  align-items: center;
+  align-content: center;
+}
+#header {
+  position: relative;
+  margin: 10px;
+}
+#muted,
+#cookie-toggle {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 30px;
+  font-size: 25px;
+}
+#muted:hover,
+#cookie-toggle:hover {
+  color: white;
+}
+#muted:active {
+  color: red;
+}
+#cookie-toggle:active {
+  color: #906c49;
 }
 #number-of-cookies {
   font-size: 4em;
@@ -25,33 +83,141 @@ body {
   font-size: 1.5em;
   text-align: center;
 }
-
 #cookie-container {
   display: flex;
   justify-content: center;
   padding: 20px;
+  margin-bottom: 10px;
 }
+#cookie {
+  width: 200px;
+  height: 200px;
+}
+#cookie:hover {
+  opacity: 0.8;
+}
+
+#cookie:active {
+  opacity: 1;
+  scale: 1.2 1.2;
+}
+
+#reset {
+  display: block;
+  font-size: large;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: red;
+  color: white;
+  border-color: white;
+  font-weight: 600;
+  margin: auto;
+  margin-bottom: 10px;
+}
+#reset:hover {
+  background-color: white;
+  color: red;
+  border-color: red;
+}
+#error-message {
+  position: relative;
+  display: none;
+  font-family: "Bungee Tint", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: larger;
+  font-weight: 600;
+  color: red;
+  padding-bottom: 20px;
+}
+
 #upgrades-container {
-  max-width: 600px;
-  margin: 0 auto;
+  position: relative;
+  min-width: 600px;
+  max-width: 800px;
   align-items: center;
+  margin: 10px;
+  margin-top: 80px;
+  /* top: 50vh;
+  transform: translateY(-50%); */
 }
 
 .upgrade-item {
   display: flex;
-  /* column-gap: 20px; */
+  flex-direction: row;
   justify-content: space-between;
-
   align-items: center;
   padding: 10px;
-  font-size: 1.4em;
+  font-size: 1.2em;
   border-bottom: 2px dotted #8c1c1c;
 }
-#main-container {
-  border: 5px solid #8c1c1c;
-  border-radius: 15px;
-  margin-bottom: 30px;
+.upgrade-cost {
+  color: #906c49;
 }
+.upgrade-increase {
+  font-weight: 200;
+  color: #403327;
+}
+
 .buy-button {
   border-radius: 15px;
+  padding: 5px;
+  background-color: #d5b48b;
+  color: #403327;
+  border-color: #403327;
+  font-weight: 600;
+}
+.buy-button:hover {
+  background-color: #403327;
+  color: #d5b48b;
+  border-color: #d5b48b;
+}
+.buy-button:active {
+  background-color: #3aa61e;
+  color: white;
+}
+/* When cookie clicker title wraps */
+@media ((width<=1111px)) {
+  #upgrades-container {
+    margin-top: 100px;
+  }
+  #cookie {
+    width: 150px;
+    height: 150px;
+  }
+}
+/* colum display upgrades sill in rows */
+@media ((width<=901px) or (height <=620px)) {
+  body {
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    overflow-x: hidden;
+  }
+  #upgrades-container {
+    margin-top: 10px;
+    max-width: 700px;
+  }
+}
+/* column display upgrades now in columns */
+@media ((width<=650px)) {
+  body {
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    overflow-x: hidden;
+  }
+  #upgrades-container {
+    margin-top: 0px;
+    min-width: 100px;
+    max-width: 600px;
+  }
+  .upgrade-item {
+    flex-direction: column;
+    row-gap: 3px;
+  }
 }

@@ -6,11 +6,10 @@
     <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js" defer></script>
     <!-- Font Awesome Icons style sheet  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/font-awesome.min.css"
-    />
-
+    <script
+      src="https://kit.fontawesome.com/5d4d1c054f.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat"
@@ -24,19 +23,43 @@
       rel="stylesheet"
     />
 
+    <!-- favicon -->
+
+    <link rel="icon" type="image/x-icon" href="./Media/Cookie.png" />
+
     <title>Cookie Clicker</title>
   </head>
   <body>
-    <h1>Cookie Clicker <i class="fa-solid fa-cookie-bite"></i></h1>
     <div id="main-container">
-      <div id="number-of-cookies"></div>
-      <div id="cookies-per-second"></div>
-      <div id="cookie-container">
-        <img id="cookie" alt="Cookie to click" src="./Media/Cookie.png" />
+      <div id="header">
+        <h1>Cookie Clicker</h1>
       </div>
-    </div>
 
-    <div id="error-message">Not eneough Cookies</div>
+      <div id="secondary-container">
+        <div id="number-of-cookies"></div>
+        <div id="cookies-per-second"></div>
+        <div id="cookie-container">
+          <img id="cookie" alt="Cookie to click" src="./Media/Cookie.png" />
+        </div>
+        <button id="reset">
+          RESET <i class="fa-solid fa-rotate-right"></i>
+        </button>
+
+        <div id="menu">
+          <div id="muted-container">
+            <button id="muted" aria-label="Sound toggle">
+              <i id="muted-icon" class="fa-solid fa-volume-high"></i>
+            </button>
+          </div>
+          <div id="toggle">
+            <button id="cookie-toggle" aria-label="Change the cookie image">
+              <i class="fa-solid fa-cookie"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="error-message">Not enough Cookies!</div>
+    </div>
     <div id="upgrades-container"></div>
   </body>
 </html>
