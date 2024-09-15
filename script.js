@@ -195,14 +195,15 @@ function eachIncrement() {
 //Local Storage Get Items
 function getLocal() {
   //!cookieCount = localStorage.getItem("cookies"); //Geting the previous cookies value from local storage
-  cookieCount = parseInt(localStorage.getItem("cookies")); //Geting the previous cookies value from local storage
+  cookieCount = parseInt(localStorage.getItem("cookies")) || 0; //Geting the previous cookies value from local storage
+  //if no previous data get 0 for cookieCount and currrent cookie and empty array
   console.log(cookieCount);
   //!I had to parse the data retrived as an integer because when refreshed, it was returned as string which messed everything up
   //!I used the console.log(type of ) to debug this issue ✅
   console.log(typeof localStorage.getItem("cookies"));
-  purchasedItems = JSON.parse(localStorage.getItem("purchasedItems"));
+  purchasedItems = JSON.parse(localStorage.getItem("purchasedItems")) || [];
   console.log(purchasedItems);
-  currentCookie = parseInt(localStorage.getItem("cookieImage"));
+  currentCookie = parseInt(localStorage.getItem("cookieImage")) || 0;
   console.log(purchasedItems);
 }
 //Local Storage Set Items
