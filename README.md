@@ -41,4 +41,6 @@ I have left debugging reflections in my javascript too which are in **red**. I w
 -I though it would be really cool to be able to customise the cookie you're clicking so i saved different cookie images and made a cookie toggle button. Each time this was clicked the 'src' of the image was changed to a different one in the cookie image array. I got my family to choose different biscuits they would like. The "boring cracker" was in there per my mum's request 😂
 -I also saved this to local storage so that the users cookie of choice will be the same when refreshed
 
+- I did have a deployment issue right at the end because it was waiting to get data from local storage when there was no data there yet. I fixed this by adding or statements as an alternative
+
 -I absolutely loved 💖 working on this assignmennt. I was heavy on the javascript which is my favoutite part and i loved that i could include my family in the interactivity sections
