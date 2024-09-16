@@ -21,9 +21,9 @@ I have left debugging reflections in my javascript too which are in **red**. I w
   -Refresh the page and continue with their previous count
 - Use my page on different screen sizes
 
--I also managed to complete the **developer** requirements by:
--Retreiving the data from the API to display the upgrades
--Using functions to sort an organise my code
+- I also managed to complete the **developer** requirements by:
+    -Retreiving the data from the API to display the upgrades
+    -Using functions to sort an organise my code
 
 **JAVASCRIPT**
 -The hardest part for me was actually wrangling the data from the API to use in multiple different parts of my code. I initially had two different functions to create and display my upgrades (createUpgradesFailed() and displayUpgrades()) but quickly realised that data from the upgrades will be needed in many other functions in my game
@@ -36,12 +36,12 @@ I have left debugging reflections in my javascript too which are in **red**. I w
 -I imported some fonts from google fonts to upgrade the look of my site as well
 
 **STRETCH GOALS 🏹**
--I enlisted the help of my siblings to help with the user interactivity section. I started by adding hover and click colour changes to all my buttons including the cookie itself to help the user identify the buttons on the page
--My younger sister suggested that i add a background colour change when i bought items or when i didn't have enough cookies.
--I added audio elements to make a "ker-ching" sound when an item was successfully purchased and a incorrect buzzer sound when they didn't have enough cookies and a "crunch" cound when the cookie was clicked. For customisation i added a mute button to the main container which would allow the user to turn off the sound effects.
--I though it would be really cool to be able to customise the cookie you're clicking so i saved different cookie images and made a cookie toggle button. Each time this was clicked the 'src' of the image was changed to a different one in the cookie image array. I got my family to choose different biscuits they would like. The "boring cracker" was in there per my mum's request 😂
--I also saved this to local storage so that the users cookie of choice will be the same when refreshed
+- I enlisted the help of my siblings to help with the user interactivity section. I started by adding hover and click colour changes to all my buttons including the cookie itself to help the user identify the buttons on the page
+- My younger sister suggested that i add a background colour change when i bought items or when i didn't have enough cookies.
+- I added audio elements to make a "ker-ching" sound when an item was successfully purchased and a incorrect buzzer sound when they didn't have enough cookies and a "crunch" cound when the cookie was clicked. For customisation i added a mute button to the main container which would allow the user to turn off the sound effects.
+- I though it would be really cool to be able to customise the cookie you're clicking so i saved different cookie images and made a cookie toggle button. Each time this was clicked the 'src' of the image was changed to a different one in the cookie image array. I got my family to choose different biscuits they would like. The "boring cracker" was in there per my mum's request 😂
+- I also saved this to local storage so that the users cookie of choice will be the same when refreshed
 
 - I did have a deployment issue right at the end because it was waiting to get data from local storage when there was no data there yet. I fixed this by adding or statements as an alternative
 
--I absolutely loved 💖 working on this assignmennt. I was heavy on the javascript which is my favoutite part and i loved that i could include my family in the interactivity sections.
+- I absolutely loved 💖 working on this assignmennt. I was heavy on the javascript which is my favoutite part and i loved that i could include my family in the interactivity sections.
