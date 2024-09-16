@@ -6,6 +6,7 @@ I have left debugging reflections in my javascript too which are in **red**. I w
 
 - https://github.com/Tech-Educators/software-dev-014/blob/main/demos/week3/week3-assignment-walking-skeleton/app.js - _Walking skeleton 🩻_
 - https://cookie-upgrade-api.vercel.app/api/upgrades - _Upgrades API_
+- https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML - _Overwriting HTML from JS using .innerHTML_
 - https://www.geeksforgeeks.org/convert-a-string-to-an-integer-in-javascript/ - _Data type issue when page was refreshed_
 - https://www.w3schools.com/cssref/css_pr_scale.php - _Scaling up the cookie when clicked_
 - https://dev.to/shantanu_jana/how-to-play-sound-on-button-click-in-javascript-3m48#:~:text=forEach(button%20%3D%3E%20%7B%20button,Play%20Sound%20on%20Button%20Click. - _Adding audio elements_
